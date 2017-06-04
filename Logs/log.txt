@@ -1,56 +1,120 @@
-2017-06-03 20:28:39 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
-2017-06-03 20:28:39 INFO  BaseSetup:14 - ******************* START TEST ********************
-2017-06-03 20:28:39 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
-2017-06-03 20:28:44 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
-2017-06-03 20:28:44 INFO  BaseSetup:14 - ******************* START TEST ********************
-2017-06-03 20:28:44 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
-2017-06-03 20:28:47 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
-2017-06-03 20:28:47 INFO  BaseSetup:14 - ******************* START TEST ********************
-2017-06-03 20:28:47 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
-2017-06-03 20:28:49 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
-2017-06-03 20:28:49 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
-2017-06-03 20:29:18 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
-2017-06-03 20:29:18 INFO  BaseSetup:14 - ******************* START TEST ********************
-2017-06-03 20:29:18 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
-2017-06-03 20:29:22 INFO  BaseSetup:25 - Test FAILED:verifyBusAvailabilitynull
-2017-06-03 20:29:22 INFO  BaseSetup:14 - ******************* START TEST ********************
-2017-06-03 20:29:22 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
-2017-06-03 20:29:24 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
-2017-06-03 20:29:24 INFO  BaseSetup:14 - ******************* START TEST ********************
-2017-06-03 20:29:24 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
-2017-06-03 20:29:27 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
-2017-06-03 20:29:27 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
-2017-06-03 23:20:30 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
-2017-06-03 23:20:31 INFO  BaseSetup:14 - ******************* START TEST ********************
-2017-06-03 23:20:31 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
-2017-06-03 23:20:34 INFO  BaseSetup:25 - Test FAILED:verifyBusAvailabilitynull
-2017-06-03 23:20:34 INFO  BaseSetup:14 - ******************* START TEST ********************
-2017-06-03 23:20:34 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
-2017-06-03 23:20:37 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
-2017-06-03 23:20:37 INFO  BaseSetup:14 - ******************* START TEST ********************
-2017-06-03 23:20:37 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
-2017-06-03 23:20:39 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
-2017-06-03 23:20:39 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
-2017-06-04 00:19:17 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
-2017-06-04 00:19:18 INFO  BaseSetup:14 - ******************* START TEST ********************
-2017-06-04 00:19:18 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
-2017-06-04 00:19:22 INFO  BaseSetup:25 - Test FAILED:verifyBusAvailabilityio.restassured.path.xml.XmlPath cannot be cast to java.util.List
-2017-06-04 00:19:22 INFO  BaseSetup:14 - ******************* START TEST ********************
-2017-06-04 00:19:22 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
-2017-06-04 00:19:23 INFO  BaseSetup:25 - Test FAILED:verifyBusAvailabilityio.restassured.path.xml.XmlPath cannot be cast to java.util.List
-2017-06-04 00:19:23 INFO  BaseSetup:14 - ******************* START TEST ********************
-2017-06-04 00:19:23 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
-2017-06-04 00:19:25 INFO  BaseSetup:25 - Test FAILED:verifyBusAvailabilityio.restassured.path.xml.XmlPath cannot be cast to java.util.List
-2017-06-04 00:19:25 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
-2017-06-04 00:20:32 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
-2017-06-04 00:20:33 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
-2017-06-04 00:21:36 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
-2017-06-04 00:21:36 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
-2017-06-04 00:25:03 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
-2017-06-04 00:25:03 INFO  BaseSetup:14 - ******************* START TEST ********************
-2017-06-04 00:25:03 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
-2017-06-04 00:25:08 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
-2017-06-04 00:25:08 INFO  BaseSetup:14 - ******************* START TEST ********************
-2017-06-04 00:25:08 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
-2017-06-04 00:25:10 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
-2017-06-04 00:25:10 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 11:56:33 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 11:56:34 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 11:56:34 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 11:56:42 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 11:56:42 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 11:56:42 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 11:56:44 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 11:56:44 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 11:57:09 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 11:57:09 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 11:57:09 INFO  BaseSetup:15 - Test started running:verifyStatusCode200
+2017-06-04 11:57:40 INFO  BaseSetup:19 - Test SUCCESS:verifyStatusCode200
+2017-06-04 11:57:40 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 11:57:40 INFO  BaseSetup:15 - Test started running:verifyResponseSLA
+2017-06-04 11:57:55 INFO  BaseSetup:67 - Time for response 14997
+2017-06-04 11:57:55 INFO  BaseSetup:25 - Test FAILED:verifyResponseSLAexpected [true] but found [false]
+2017-06-04 11:57:55 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 11:57:55 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 11:57:57 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 11:57:57 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 11:57:57 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 11:58:01 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 11:58:01 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 12:13:47 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 12:13:47 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:13:47 INFO  BaseSetup:15 - Test started running:verifyStatusCode200
+2017-06-04 12:14:19 INFO  BaseSetup:19 - Test SUCCESS:verifyStatusCode200
+2017-06-04 12:14:19 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:14:19 INFO  BaseSetup:15 - Test started running:verifyResponseSLA
+2017-06-04 12:14:33 INFO  BaseSetup:70 - Time for response 13750
+2017-06-04 12:14:33 INFO  BaseSetup:25 - Test FAILED:verifyResponseSLAResponse time more than expected 12000 expected [true] but found [false]
+2017-06-04 12:14:34 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:14:34 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:14:35 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 12:14:35 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:14:35 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:14:36 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 12:14:36 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 12:31:43 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 12:31:43 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:31:43 INFO  BaseSetup:15 - Test started running:verifyStatusCode200
+2017-06-04 12:32:05 INFO  BaseSetup:19 - Test SUCCESS:verifyStatusCode200
+2017-06-04 12:32:05 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:32:05 INFO  BaseSetup:15 - Test started running:verifyResponseSLA
+2017-06-04 12:32:20 INFO  BaseSetup:64 - Time for response 15156
+2017-06-04 12:32:20 INFO  BaseSetup:25 - Test FAILED:verifyResponseSLAResponse time more than expected 12000 expected [true] but found [false]
+2017-06-04 12:32:21 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 12:35:45 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 12:35:46 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:35:46 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:35:50 INFO  BaseSetup:25 - Test FAILED:verifyBusAvailabilitynull
+2017-06-04 12:35:50 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:35:50 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:35:51 INFO  BaseSetup:25 - Test FAILED:verifyBusAvailabilityExpected number of buses not matched expected [true] but found [false]
+2017-06-04 12:35:51 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:35:51 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:35:53 INFO  BaseSetup:25 - Test FAILED:verifyBusAvailabilityExpected number of buses not matched expected [true] but found [false]
+2017-06-04 12:35:53 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 12:37:05 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 12:37:05 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:37:05 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:37:09 INFO  BaseSetup:25 - Test FAILED:verifyBusAvailabilitynull
+2017-06-04 12:37:09 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:37:09 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:37:10 INFO  BaseSetup:25 - Test FAILED:verifyBusAvailabilityExpected number of buses not matched expected [true] but found [false]
+2017-06-04 12:37:10 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:37:10 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:37:12 INFO  BaseSetup:25 - Test FAILED:verifyBusAvailabilityExpected number of buses not matched expected [true] but found [false]
+2017-06-04 12:37:12 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 12:38:32 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 12:38:33 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:38:33 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:38:37 INFO  BaseSetup:25 - Test FAILED:verifyBusAvailabilitynull
+2017-06-04 12:38:37 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:38:37 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:38:38 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 12:38:38 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:38:38 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:38:40 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 12:38:40 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 12:39:09 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 12:39:10 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:39:10 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:39:13 INFO  BaseSetup:25 - Test FAILED:verifyBusAvailabilitynull
+2017-06-04 12:39:13 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:39:13 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:39:15 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 12:39:15 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:39:15 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:39:16 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 12:39:16 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 12:57:58 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 12:57:59 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:57:59 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:58:02 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 12:58:02 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:58:02 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:58:04 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 12:58:04 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 12:58:04 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 12:58:05 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 12:58:05 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 13:23:22 INFO  BaseSetup:39 - !!!!!!!!!!!!!!!!!!!!!!!!!! START TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!
+2017-06-04 13:23:22 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 13:23:22 INFO  BaseSetup:15 - Test started running:verifyStatusCode200
+2017-06-04 13:23:44 INFO  BaseSetup:19 - Test SUCCESS:verifyStatusCode200
+2017-06-04 13:23:44 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 13:23:44 INFO  BaseSetup:15 - Test started running:verifyResponseSLA
+2017-06-04 13:23:57 INFO  BaseSetup:64 - Time for response 13064
+2017-06-04 13:23:57 INFO  BaseSetup:25 - Test FAILED:verifyResponseSLAResponse time more than expected 12000 expected [true] but found [false]
+2017-06-04 13:23:58 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 13:23:58 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 13:23:59 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 13:23:59 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 13:23:59 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 13:24:00 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 13:24:00 INFO  BaseSetup:14 - ******************* START TEST ********************
+2017-06-04 13:24:00 INFO  BaseSetup:15 - Test started running:verifyBusAvailability
+2017-06-04 13:24:02 INFO  BaseSetup:19 - Test SUCCESS:verifyBusAvailability
+2017-06-04 13:24:02 INFO  BaseSetup:43 - !!!!!!!!!!!!!!!!!!!!!!!!!! END TEST SUITE !!!!!!!!!!!!!!!!!!!!!!!!!!

@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Goibibo_API_Test_Suite">
-              <span class="suite-name border-passed">Goibibo API Test Suite</span>
+              <span class="suite-name border-failed">Goibibo API Test Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods,   2 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Goibibo_API_Test_Suite" class="hide-methods failed suite-Goibibo_API_Test_Suite"> (hide)</a> <!-- hide-methods failed suite-Goibibo_API_Test_Suite -->
+                      <a href="#" panel-name="suite-Goibibo_API_Test_Suite" class="show-methods failed suite-Goibibo_API_Test_Suite"> (show)</a> <!-- show-methods failed suite-Goibibo_API_Test_Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Goibibo_API_Test_Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Goibibo_API_Test_Suite" title="endpoints.hotel.Get_Hotels_By_City" hash-for-method="verifyResponseSLA(6771549831164675055, 12000)">verifyResponseSLA(6771549831164675055, 12000)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Goibibo_API_Test_Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,12 +116,22 @@
                     <div class="method-list-content passed suite-Goibibo_API_Test_Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Goibibo_API_Test_Suite" title="endpoints.bus.BusSearch" hash-for-method="verifyBusAvailability(json, bangalore, mumbai, 20170604, 20170608)">verifyBusAvailability(json, bangalore, mumbai, 20170604, 20170608)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Goibibo_API_Test_Suite" title="endpoints.bus.BusSearch" hash-for-method="verifyBusAvailability(json, bangalore, mumbai, 20170603, 20170603, Error)">verifyBusAvailability(json, bangalore, mumbai, 20170603, 20170603, Error)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Goibibo_API_Test_Suite" title="endpoints.bus.BusSearch" hash-for-method="verifyBusAvailability(json, bangalore, mumbai, 20170604, 20170608)">verifyBusAvailability(json, bangalore, mumbai, 20170604, 20170608)</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Goibibo_API_Test_Suite" title="endpoints.bus.BusSearch" hash-for-method="verifyBusAvailability(json, hyderabad, mumbai, 20170608, 20170610, 2)">verifyBusAvailability(json, hyderabad, mumbai, 20170608, 20170610, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Goibibo_API_Test_Suite" title="endpoints.bus.BusSearch" hash-for-method="verifyBusAvailability(json, mumbai, goa, 20170608, 20170610, 2)">verifyBusAvailability(json, mumbai, goa, 20170608, 20170610, 2)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Goibibo_API_Test_Suite" title="endpoints.hotel.Get_Hotels_By_City" hash-for-method="verifyStatusCode200(6771549831164675055)">verifyStatusCode200(6771549831164675055)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Goibibo_API_Test_Suite -->
@@ -122,6 +146,42 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Goibibo_API_Test_Suite" class="panel Goibibo_API_Test_Suite">
+          <div class="suite-Goibibo_API_Test_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">endpoints.hotel.Get_Hotels_By_City</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyResponseSLA(6771549831164675055, 12000)">
+                  </a> <!-- verifyResponseSLA(6771549831164675055, 12000) -->
+                  <span class="method-name">verifyResponseSLA</span>
+                  <span class="parameters">(6771549831164675055, 12000)</span>
+                  <div class="stack-trace">java.lang.AssertionError: Response time more than expected 12000 expected [true] but found [false]
+	at endpoints.hotel.Get_Hotels_By_City.verifyResponseSLA(Get_Hotels_By_City.java:65)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Goibibo_API_Test_Suite-class-failed -->
+          <div class="suite-Goibibo_API_Test_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">endpoints.hotel.Get_Hotels_By_City</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStatusCode200(6771549831164675055)">
+                  </a> <!-- verifyStatusCode200(6771549831164675055) -->
+                  <span class="method-name">verifyStatusCode200</span>
+                  <span class="parameters">(6771549831164675055)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Goibibo_API_Test_Suite-class-passed -->
           <div class="suite-Goibibo_API_Test_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -130,18 +190,26 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyBusAvailability(json, bangalore, mumbai, 20170604, 20170608)">
-                  </a> <!-- verifyBusAvailability(json, bangalore, mumbai, 20170604, 20170608) -->
+                  <a name="verifyBusAvailability(json, bangalore, mumbai, 20170603, 20170603, Error)">
+                  </a> <!-- verifyBusAvailability(json, bangalore, mumbai, 20170603, 20170603, Error) -->
                   <span class="method-name">verifyBusAvailability</span>
-                  <span class="parameters">(json, bangalore, mumbai, 20170604, 20170608)</span>
+                  <span class="parameters">(json, bangalore, mumbai, 20170603, 20170603, Error)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="verifyBusAvailability(json, bangalore, mumbai, 20170604, 20170608)">
-                  </a> <!-- verifyBusAvailability(json, bangalore, mumbai, 20170604, 20170608) -->
+                  <a name="verifyBusAvailability(json, hyderabad, mumbai, 20170608, 20170610, 2)">
+                  </a> <!-- verifyBusAvailability(json, hyderabad, mumbai, 20170608, 20170610, 2) -->
                   <span class="method-name">verifyBusAvailability</span>
-                  <span class="parameters">(json, bangalore, mumbai, 20170604, 20170608)</span>
+                  <span class="parameters">(json, hyderabad, mumbai, 20170608, 20170610, 2)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyBusAvailability(json, mumbai, goa, 20170608, 20170610, 2)">
+                  </a> <!-- verifyBusAvailability(json, mumbai, goa, 20170608, 20170610, 2) -->
+                  <span class="method-name">verifyBusAvailability</span>
+                  <span class="parameters">(json, mumbai, goa, 20170608, 20170610, 2)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -163,6 +231,7 @@
     &lt;parameter name=&quot;responseTime&quot; value=&quot;12000&quot;/&gt;
     &lt;parameter name=&quot;city_id&quot; value=&quot;6771549831164675055&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;endpoints.hotel.Get_Hotels_By_City&quot;/&gt;
       &lt;class name=&quot;endpoints.bus.BusSearch&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Endpoints --&gt;
@@ -177,7 +246,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Endpoints (1 class)</span>
+                <span class="test-name">Endpoints (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -203,20 +272,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyBusAvailability')
-data.setCell(0, 2, 'endpoints.bus.BusSearch')
-data.setCell(0, 3, 4794);
+data.setCell(0, 1, 'verifyStatusCode200')
+data.setCell(0, 2, 'endpoints.hotel.Get_Hotels_By_City')
+data.setCell(0, 3, 21667);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'verifyBusAvailability')
-data.setCell(1, 2, 'endpoints.bus.BusSearch')
-data.setCell(1, 3, 1270);
+data.setCell(1, 1, 'verifyResponseSLA')
+data.setCell(1, 2, 'endpoints.hotel.Get_Hotels_By_City')
+data.setCell(1, 3, 13083);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyBusAvailability')
+data.setCell(2, 2, 'endpoints.bus.BusSearch')
+data.setCell(2, 3, 1526);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifyBusAvailability')
+data.setCell(3, 2, 'endpoints.bus.BusSearch')
+data.setCell(3, 3, 1326);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'verifyBusAvailability')
+data.setCell(4, 2, 'endpoints.bus.BusSearch')
+data.setCell(4, 3, 1180);
 window.suiteTableData['Goibibo_API_Test_Suite']= { tableData: data, tableDiv: 'times-div-Goibibo_API_Test_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 38 seconds</span>
               <div id="times-div-Goibibo_API_Test_Suite">
               </div> <!-- times-div-Goibibo_API_Test_Suite -->
             </div> <!-- times-div -->
@@ -228,15 +309,35 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyBusAvailability(json, bangalore, mumbai, 20170604, 20170608)</span>
+              <span class="reporter-method-name">verifyBusAvailability(json, bangalore, mumbai, 20170603, 20170603, Error)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Test started running:verifyBusAvailability</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
             <div class="reporter-method-div">
-              <span class="reporter-method-name">verifyBusAvailability(json, bangalore, mumbai, 20170604, 20170608)</span>
+              <span class="reporter-method-name">verifyBusAvailability(json, hyderabad, mumbai, 20170608, 20170610, 2)</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">Test started running:verifyBusAvailability</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyBusAvailability(json, mumbai, goa, 20170608, 20170610, 2)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test started running:verifyBusAvailability</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyStatusCode200(6771549831164675055)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test started running:verifyStatusCode200</span>
+              </div> <!-- reporter-method-output-div -->
+            </div> <!-- reporter-method-div -->
+            <div class="reporter-method-div">
+              <span class="reporter-method-name">verifyResponseSLA(6771549831164675055, 12000)</span>
+              <div class="reporter-method-output-div">
+                <span class="reporter-method-output">Test started running:verifyResponseSLA</span>
+                <span class="reporter-method-output">verifyResponseSLA--Test method failed
+</span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -259,17 +360,45 @@ return data;
                 <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-suite before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">endpoints.hotel.Get_Hotels_By_City</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">setup</span>
+                <span class="method-start">472 ms</span>
+              </div> <!-- configuration-suite before -->
               <div class="configuration-class before">
                 <span class="method-name">setEndpoint</span>
-                <span class="method-start">546 ms</span>
+                <span class="method-start">482 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verifyBusAvailability(json, bangalore, mumbai, 20170604, 20170608)</span>
-                <span class="method-start">1274 ms</span>
+                <span class="method-name">verifyStatusCode200(6771549831164675055)</span>
+                <span class="method-start">493 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">verifyBusAvailability(json, bangalore, mumbai, 20170604, 20170608)</span>
-                <span class="method-start">6071 ms</span>
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifyResponseSLA(6771549831164675055, 12000)</span>
+                <span class="method-start">22160 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">endpoints.bus.BusSearch</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setEndpoint</span>
+                <span class="method-start">35253 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verifyBusAvailability(json, bangalore, mumbai, 20170603, 20170603, Error)</span>
+                <span class="method-start">36127 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyBusAvailability(json, hyderabad, mumbai, 20170608, 20170610, 2)</span>
+                <span class="method-start">37310 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">verifyBusAvailability(json, mumbai, goa, 20170608, 20170610, 2)</span>
+                <span class="method-start">38842 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

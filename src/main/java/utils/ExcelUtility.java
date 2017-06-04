@@ -38,7 +38,7 @@ public class ExcelUtility {
 		XSSFRow row;
 		XSSFCell cell;
 
-        tabArray=new String[sheet.getLastRowNum()][5];
+        tabArray=new String[sheet.getLastRowNum()][sheet.getRow(0).getPhysicalNumberOfCells()];
 		// Iterating all the rows in the sheet
 		Iterator<Row> rows = sheet.rowIterator();
 

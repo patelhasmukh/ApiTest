@@ -8,7 +8,7 @@
     <parameter name="city_id" value="6771549831164675055"/>
     <parameter name="responseTime" value="12000"/> 
     <classes>
-      <!--   <class name="endpoints.hotel.Get_Hotels_By_City" /> -->
+      <class name="endpoints.hotel.Get_Hotels_By_City" />
       <class name="endpoints.bus.BusSearch" />
     </classes>
   </test>
@@ -16,7 +16,8 @@
 
 <!-- Major Areas for EndPoints
 
-- Validating all HTTP Error Codes 200, 400, 404
+- Validating all HTTP Error Codes e.g. 2xx, 3xx, 4xx, 5xx
+- 
 - Testing GET Calls and Their Responses with Valid Data
 - Testing GET Calls and Their Responses with Invalid Data
 - Sending Test JSON Data with POST Calls and verifying changes in DB as a result of the Add/Update/Delete

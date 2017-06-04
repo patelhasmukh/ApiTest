@@ -1,11 +1,12 @@
 package endpoints.hotel;
 
 import static io.restassured.RestAssured.given;
+import static org.testng.Assert.assertTrue;
+
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Parameters;
@@ -46,11 +47,7 @@ public class Get_Hotels_By_City extends BaseSetup {
 				when().get(ENDPOINT)
 				.then().extract().response();
 		JsonPath jsonPath = new JsonPath(response.asString());
-		if (jsonPath.getBoolean("success")) {
-			Assert.assertTrue(jsonPath.getBoolean("success"));
-		} else {
-			Assert.fail("Unable to reach - get_hotels_by_cityid, rest of the cases will be skipped");
-		}
+		assertTrue(jsonPath.getBoolean("success"),"Unable to reach endpoint - get_hotels_by_cityid, rest of the cases will be skipped");
 	}
 
 	
@@ -65,7 +62,8 @@ public class Get_Hotels_By_City extends BaseSetup {
 		RequestSpecification request = getRestRequestSpecification();
 		Response response = given().spec(request).params(parametersMap).when().get(ENDPOINT);
 		logger.info("Time for response " + response.getTime());
-		Assert.assertTrue(response.getTime() < responseTime);
+		assertTrue(response.getTime() < responseTime, "Response time more than expected "+responseTime);
+		
 	}
 	
 	

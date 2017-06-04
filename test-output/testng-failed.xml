@@ -8,13 +8,14 @@
     <parameter name="responseTime" value="12000"/>
     <parameter name="city_id" value="6771549831164675055"/>
     <classes>
-      <class name="endpoints.bus.BusSearch">
+      <class name="endpoints.hotel.Get_Hotels_By_City">
         <methods>
-          <include name="verifyBusAvailability"/>
+          <include name="verifyResponseSLA" invocation-numbers="0"/>
+          <include name="verifyStatusCode200"/>
           <include name="setup"/>
           <include name="setEndpoint"/>
         </methods>
-      </class> <!-- endpoints.bus.BusSearch -->
+      </class> <!-- endpoints.hotel.Get_Hotels_By_City -->
     </classes>
   </test> <!-- Endpoints(failed) -->
 </suite> <!-- Failed suite [Goibibo API Test Suite] -->

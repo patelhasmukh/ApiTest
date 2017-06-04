@@ -1,6 +1,8 @@
 package endpoints.bus;
 
 import static io.restassured.RestAssured.given;
+import static org.testng.Assert.assertNull;
+import static org.testng.Assert.assertTrue;
 
 import java.io.File;
 import java.io.IOException;
@@ -8,7 +10,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
@@ -53,7 +54,7 @@ public class BusSearch extends BaseSetup {
 	}
 	
 	@Test(dataProvider="BusSearch_Data")
-	public void verifyBusAvailability(String format, String source, String destination, String dateofdeparture, String dateofarrival) {
+	public void verifyBusAvailability(String format, String source, String destination, String dateofdeparture, String dateofarrival, String expectedcount) {
 		Map<String, String> parametersMap = new HashMap<String, String>();
 		parametersMap.put("format", format);
 		parametersMap.put("source", source);
@@ -65,9 +66,16 @@ public class BusSearch extends BaseSetup {
 				log().all().
 				when().get(ENDPOINT).then().extract().response();
 		
-		List<String> onwardflights = response.body().path("data.onwardflights");
-		System.out.println(onwardflights.size());
-		Assert.assertTrue(onwardflights.size()>0);
+		
+		if(expectedcount.compareToIgnoreCase("error") == 0){
+			assertNull(response.body().path("data.onwardflights"));
+		} else {
+			List<String> onwardflights = response.body().path("data.onwardflights");
+			System.out.println("####### Number :" + onwardflights.size());
+			assertTrue(onwardflights.size()>=Integer.parseInt(expectedcount), "Expected number of buses not matched");
+		}
+		
+
 
 	}
 
