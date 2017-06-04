@@ -15,16 +15,19 @@
 </suite>
 
 <!-- Major Areas for EndPoints
-
-- Validating all HTTP Error Codes e.g. 2xx, 3xx, 4xx, 5xx
-- 
-- Testing GET Calls and Their Responses with Valid Data
-- Testing GET Calls and Their Responses with Invalid Data
-- Sending Test JSON Data with POST Calls and verifying changes in DB as a result of the Add/Update/Delete
-- Validating Timeouts for the response
-- Reusing Data from a Previous Call to the Next One
-- Validating JSON responses according to a schema
-- Validating different response types - XML and JSON
-- Validate response with different authentication methods if they exist
-
+Functional
+	Validating all HTTP Error Codes e.g. 2xx, 3xx, 4xx, 5xx
+	Testing HTTP Calls and Their Responses with Valid/Boundary/Invalid Data
+	Sending Test JSON Data with POST Calls and verifying changes in DB/data structures as a result of the Add/Update/Delete
+	Validate response with supported authentication methods
+	Validating different response types - XML ,JSON, etc.
+	Schema validation - Validating JSON responses according to a schema
+	Reusing Data from a Previous Call to the Next One
+Non Functional
+	Usability Tests – Well formedness of API
+	Multiple API requests – with Load
+	Validating Timeouts for the response
+	API Documentation accessibility
+	Security Tests 
+	Integration Testing with other tool (if integrated)
  -->

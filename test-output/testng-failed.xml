@@ -1,21 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Goibibo API Test Suite]">
-  <listeners>
-    <listener class-name="TestNGListeners.CustomListener"/>
-  </listeners>
-  <test name="Endpoints(failed)">
-    <parameter name="responseTime" value="12000"/>
-    <parameter name="city_id" value="6771549831164675055"/>
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="endpoints.hotel.Get_Hotels_By_City">
+      <class name="endpoints.bus.BusSearch">
         <methods>
-          <include name="verifyResponseSLA" invocation-numbers="0"/>
-          <include name="verifyStatusCode200"/>
           <include name="setup"/>
           <include name="setEndpoint"/>
+          <include name="verifyBusSearchFunctionality"/>
         </methods>
-      </class> <!-- endpoints.hotel.Get_Hotels_By_City -->
+      </class> <!-- endpoints.bus.BusSearch -->
     </classes>
-  </test> <!-- Endpoints(failed) -->
-</suite> <!-- Failed suite [Goibibo API Test Suite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

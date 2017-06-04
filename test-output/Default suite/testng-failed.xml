@@ -3,12 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="endpoints.user.GetRequestTest">
+      <class name="endpoints.bus.BusSearch">
         <methods>
-          <include name="verifyStatusCode200"/>
           <include name="setup"/>
+          <include name="setEndpoint"/>
+          <include name="verifyBusSearchFunctionality"/>
         </methods>
-      </class> <!-- endpoints.user.GetRequestTest -->
+      </class> <!-- endpoints.bus.BusSearch -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -16,7 +16,7 @@ import io.restassured.specification.RequestSpecification;
 public class BaseSetup {
 
 	protected static Properties testProperties = new Properties();
-	protected static Logger logger = Logger.getLogger(BaseSetup.class);
+	protected final Logger logger = Logger.getLogger(this.getClass());
 	
 	private String INIT_PROPERTIES = System.getProperty("user.dir") + "\\Config\\init.properties";
 	
@@ -47,5 +47,6 @@ public class BaseSetup {
 		params.put("app_id", testProperties.getProperty("aut.app_id"));
 		params.put("app_key", testProperties.getProperty("aut.app_key"));
 		return RestAssured.given().contentType(ContentType.JSON).params(params);
+
 	}
 }

@@ -1,6 +1,7 @@
 package endpoints.bus;
 
 import static io.restassured.RestAssured.given;
+import static org.testng.Assert.assertNotNull;
 import static org.testng.Assert.assertNull;
 import static org.testng.Assert.assertTrue;
 
@@ -14,10 +15,13 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
 import Base.BaseSetup;
+import io.restassured.mapper.ObjectMapperType;
 import io.restassured.response.Response;
 import io.restassured.specification.RequestSpecification;
+import pojo.endpoint.bus.*;
 import utils.ExcelUtility;
 
 /*
@@ -46,7 +50,7 @@ public class BusSearch extends BaseSetup {
 	}
 
 	@DataProvider(name="BusSearch_Data")
-	public Object[][] createTestDataRecords() {
+	public Object[][] busSearch_createTestDataRecords() {
 		ExcelUtility readXlsx = new ExcelUtility();
 		String filepath =  System.getProperty("user.dir") + File.separator + testProperties.getProperty("testdata.endpoint.bus");
 		return readXlsx.readXLSXFile(filepath, "TestData");
@@ -54,7 +58,7 @@ public class BusSearch extends BaseSetup {
 	}
 	
 	@Test(dataProvider="BusSearch_Data")
-	public void verifyBusAvailability(String format, String source, String destination, String dateofdeparture, String dateofarrival, String expectedcount) {
+	public void busSearch_verifyBusAvailability(String format, String source, String destination, String dateofdeparture, String dateofarrival, String expectedcount) {
 		Map<String, String> parametersMap = new HashMap<String, String>();
 		parametersMap.put("format", format);
 		parametersMap.put("source", source);
@@ -65,8 +69,6 @@ public class BusSearch extends BaseSetup {
 		Response response = given().spec(request).params(parametersMap).
 				log().all().
 				when().get(ENDPOINT).then().extract().response();
-		
-		
 		if(expectedcount.compareToIgnoreCase("error") == 0){
 			assertNull(response.body().path("data.onwardflights"));
 		} else {
@@ -74,9 +76,34 @@ public class BusSearch extends BaseSetup {
 			System.out.println("####### Number :" + onwardflights.size());
 			assertTrue(onwardflights.size()>=Integer.parseInt(expectedcount), "Expected number of buses not matched");
 		}
+
+	}
+	
+	/* Verify Functionality - 
+	 * a. Flight Duration Cannot be null for all the buses
+	 * b. Verify Bus Type should be A/C
+	 */
+	@Test
+	public void busSearch_verifyBusSearchFunctionality() {
+		Map<String, String> parametersMap = new HashMap<String, String>();
+		parametersMap.put("format", "json");
+		parametersMap.put("source", "mumbai");
+		parametersMap.put("destination", "nagpur");
+		parametersMap.put("dateofdeparture", "20170610");
+		parametersMap.put("dateofarrival", "20170611");
 		
-
-
+		SoftAssert softAssert = new SoftAssert();
+		RequestSpecification request = getRestRequestSpecification();
+		Response response = request.params(parametersMap).get(ENDPOINT);
+		
+		BusSearchPojo busdata = response.as(BusSearchPojo.class, ObjectMapperType.GSON);
+		
+		List<Returnflight> returnflights = busdata.getData().getReturnflights();
+		for (Returnflight returnflight : returnflights) {
+			assertNotNull(returnflight.getDuration());
+			assertTrue(returnflight.getBusType().contains("A/C"), "A/C not found in the Bus Type");
+		}
+		softAssert.assertAll();
 	}
 
 	

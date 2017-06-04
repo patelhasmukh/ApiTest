@@ -75,11 +75,11 @@ public class ExcelUtility {
 		
 	}
 
-	public static void main(String[] args) {
-		ExcelUtility readXlsx = new ExcelUtility();
-		//String filepath =  System.getProperty("user.dir") + File.separator + testProperties.getProperty("testdata.endpoint.bus");
-		readXlsx.readXLSXFile(System.getProperty("user.dir") + "\\TestData\\EndPoint_Bus\\GetBus_TestData.xlsx", "TestData");
-		
-	}
+//	public static void main(String[] args) {
+//		ExcelUtility readXlsx = new ExcelUtility();
+//		//String filepath =  System.getProperty("user.dir") + File.separator + testProperties.getProperty("testdata.endpoint.bus");
+//		readXlsx.readXLSXFile(System.getProperty("user.dir") + "\\TestData\\EndPoint_Bus\\GetBus_TestData.xlsx", "TestData");
+//		
+//	}
 
 }
