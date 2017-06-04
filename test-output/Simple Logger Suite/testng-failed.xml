@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Simple Logger Suite]">
+  <listeners>
+    <listener class-name="TestNGListeners.CustomListener"/>
+  </listeners>
+  <test name="Sanity Test Suite(failed)">
+    <parameter name="city_id" value="6771549831164675055"/>
+    <classes>
+      <class name="endpoints.hotel.Get_Hotels_By_City">
+        <methods>
+          <include name="verifyResponseSLA" invocation-numbers="0"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- endpoints.hotel.Get_Hotels_By_City -->
+    </classes>
+  </test> <!-- Sanity Test Suite(failed) -->
+</suite> <!-- Failed suite [Simple Logger Suite] -->

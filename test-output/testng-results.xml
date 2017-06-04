@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="2" passed="2">
+  <reporter-output>
+    <line>
+      <![CDATA[Test started running:verifyBusAvailability]]>
+    </line>
+    <line>
+      <![CDATA[Test started running:verifyBusAvailability]]>
+    </line>
+  </reporter-output>
+  <suite name="Goibibo API Test Suite" duration-ms="6811" started-at="2017-06-04T04:25:03Z" finished-at="2017-06-04T04:25:10Z">
+    <groups>
+    </groups>
+    <test name="Endpoints" duration-ms="6811" started-at="2017-06-04T04:25:03Z" finished-at="2017-06-04T04:25:10Z">
+      <class name="endpoints.bus.BusSearch">
+        <test-method status="PASS" signature="setup()[pri:0, instance:endpoints.bus.BusSearch@73ad2d6]" name="setup" is-config="true" duration-ms="533" started-at="2017-06-04T00:25:02Z" finished-at="2017-06-04T00:25:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method status="PASS" signature="setEndpoint()[pri:0, instance:endpoints.bus.BusSearch@73ad2d6]" name="setEndpoint" is-config="true" duration-ms="0" started-at="2017-06-04T00:25:03Z" finished-at="2017-06-04T00:25:03Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setEndpoint -->
+        <test-method status="PASS" signature="verifyBusAvailability(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:endpoints.bus.BusSearch@73ad2d6]" name="verifyBusAvailability" duration-ms="4794" started-at="2017-06-04T00:25:03Z" data-provider="BusSearch_Data" finished-at="2017-06-04T00:25:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mumbai]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20170604]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[20170608]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test started running:verifyBusAvailability]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyBusAvailability -->
+        <test-method status="PASS" signature="verifyBusAvailability(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:endpoints.bus.BusSearch@73ad2d6]" name="verifyBusAvailability" duration-ms="1270" started-at="2017-06-04T00:25:08Z" data-provider="BusSearch_Data" finished-at="2017-06-04T00:25:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[json]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[bangalore]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[mumbai]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[20170604]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[20170608]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+            <line>
+              <![CDATA[Test started running:verifyBusAvailability]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- verifyBusAvailability -->
+      </class> <!-- endpoints.bus.BusSearch -->
+    </test> <!-- Endpoints -->
+  </suite> <!-- Goibibo API Test Suite -->
+</testng-results>

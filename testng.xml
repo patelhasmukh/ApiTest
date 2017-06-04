@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Goibibo API Test Suite">
+  <listeners>
+    <listener class-name="TestNGListeners.CustomListener" />
+  </listeners>
+  <test name="Endpoints">
+    <parameter name="city_id" value="6771549831164675055"/>
+    <parameter name="responseTime" value="12000"/> 
+    <classes>
+      <!--   <class name="endpoints.hotel.Get_Hotels_By_City" /> -->
+      <class name="endpoints.bus.BusSearch" />
+    </classes>
+  </test>
+</suite>
+
+<!-- Major Areas for EndPoints
+
+- Validating all HTTP Error Codes 200, 400, 404
+- Testing GET Calls and Their Responses with Valid Data
+- Testing GET Calls and Their Responses with Invalid Data
+- Sending Test JSON Data with POST Calls and verifying changes in DB as a result of the Add/Update/Delete
+- Validating Timeouts for the response
+- Reusing Data from a Previous Call to the Next One
+- Validating JSON responses according to a schema
+- Validating different response types - XML and JSON
+- Validate response with different authentication methods if they exist
+
+ -->
